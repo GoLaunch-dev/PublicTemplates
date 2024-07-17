@@ -14,23 +14,36 @@ It's split into the following main sections:
 Basically some meta information about the repo that'll be displayed on the template selection screen.
 
 `template_name`: Your template's name, 10-35 characters
+
 `template_description`: A simple description, 25-100 characters long
+
 `template_github_owner`: a link to your github user profile
+
 `tags`: a list of technologies that allow the user to more easily identify what your template does. 4-8 tags works best.
+
 
 ### fields 
 
 The fields the user will fill out when creating a repo with your template.
 
 `label`: the name of the field, displayed to the user
+
 `type`: the variable type, currently we support `string` and `png`
+
 `description`: the description of your field, seen by the user
+
 `codeId`: an id used internally to match, must be unique across fields
+
 `codeDefined`: the string that our engine will REPLACE in your repo with the user's value. For example, all instances of {{name}} in your repo will be replaced by whatever the user enters into the form on golaunch. Only applicable to type `string`
+
 `defaultValue`: the default value for a string
+
 `required`: if the field is required
+
 `aiGenable`: can the user use GoLaunch's AI to generate this field
+
 `paths`: an array of path locations for type `png` to be saved. i.e if you allow the user to upload an image, all the paths you want it to be saved to
+
 
 ### ignore
 
