@@ -2,15 +2,29 @@ A list of repos publicly displayed on the [GoLaunch](https://golaunch.dev) creat
 
 # Submitting your repo for public use
 
-If you have a repository you'd like to submit for public use, it requires a few things.
+#### Requirements
 
-## 1. Valid golaunch.yaml file
+- A valid golaunch.yaml. View the instructions below on how to create and test your golaunch.yaml
+- Your github repo must be marked as a template in its Github settings
+- Someone from our team must manuallay review the repository to make sure everything is properly done
 
-A valid golaunch.yaml file is necessary in order for the site to know how your template works.
+#### How to submit
 
-[Here's an example](https://github.com/GoLaunch-dev/saas-waitlist-landingpage/blob/main/golaunch.yaml)
+Once you've verified and tested your template out at [the custom test page](https://golaunch.dev/custom) you can create a merge request on this repo detailing exactly what your repository does, who it's meant for, and a screenshot of how it looks when completed. A permanently hosted demo link, like a vercel link for example, of what the template looks like when completed, is highly recommended.
 
-It's split into the following main sections:
+#### Restrictions
+
+Any language or platform can be added here - it's not just limited to sites. No NSFW or anything crazy is allowed of course - basically be cool. Anyone found to be abusing the system will be barred from further submissions.
+
+## How to create and test your golaunch.yaml
+
+A valid golaunch.yaml file is necessary in order for the site to know how your template works. It must be commited to the top level of your repo.
+
+[Here's an example of a valid golaunch.yaml file](https://github.com/GoLaunch-dev/saas-waitlist-landingpage/blob/main/golaunch.yaml)
+
+You can test yours on [the custom test page](https://golaunch.dev/custom)
+
+A golaunch.yaml file is split into the following sections:
 
 ### metadata
 
@@ -18,11 +32,13 @@ Basically some meta information about the repo that'll be displayed on the templ
 
 `template_name`: Your template's name, 10-35 characters
 
+`template_demo_url`: A permanent demo url that the user can click on to see how your template looks and functions
+
 `template_description`: A simple description, 25-100 characters long
 
 `template_github_owner`: a link to your github user profile
 
-`tags`: a list of technologies that allow the user to more easily identify what your template does. 4-8 tags works best.
+`tags`: a list of technologies that allow the user to more easily identify what your template does. 4-8 tags works best
 
 ### fields
 
@@ -121,4 +137,4 @@ Once you've verified and tested your template out at [the custom test page](http
 
 # Restrictions
 
-Any language or platform can be added here - it's not just limited to sites. No NSFW or anything crazy is allowed of course - basically be cool. Anyone found to be abusing the system will be barred from further submissions.
+Templates for any language / framework / platform can be added here - it's not just limited to sites. No NSFW or anything crazy is allowed of course - basically be cool. Anyone found to be abusing the system will be barred from further submissions.
