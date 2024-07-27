@@ -1,9 +1,11 @@
 A list of repos publicly displayed on the [GoLaunch](https://golaunch.dev) create page.
 
 # Submitting your repo for public use
+
 If you have a repository you'd like to submit for public use, it requires a few things.
 
 ## 1. Valid golaunch.yaml file
+
 A valid golaunch.yaml file is necessary in order for the site to know how your template works.
 
 [Here's an example](https://github.com/GoLaunch-dev/saas-waitlist-landingpage/blob/main/golaunch.yaml)
@@ -11,6 +13,7 @@ A valid golaunch.yaml file is necessary in order for the site to know how your t
 It's split into the following main sections:
 
 ### metadata
+
 Basically some meta information about the repo that'll be displayed on the template selection screen.
 
 `template_name`: Your template's name, 10-35 characters
@@ -21,8 +24,7 @@ Basically some meta information about the repo that'll be displayed on the templ
 
 `tags`: a list of technologies that allow the user to more easily identify what your template does. 4-8 tags works best.
 
-
-### fields 
+### fields
 
 The fields the user will fill out when creating a repo with your template.
 
@@ -44,11 +46,11 @@ The fields the user will fill out when creating a repo with your template.
 
 `paths`: an array of path locations for type `png` to be saved. i.e if you allow the user to upload an image, all the paths you want it to be saved to
 
-
 ### ignore
 
 ignore:
-  - golaunch.yaml
+
+- golaunch.yaml
 
 The `ignore` object takes a list of file/folder pathnames that will be ignored when our engine goes through and replaces files. By default, the following paths are ignored without any need to add them on your end:
 
@@ -109,6 +111,9 @@ const ignoredFiles: string[] = [
 ]
 ```
 
+### Post install instructions
+
+If you have any specific actions the user should take after setting the repository is cloned (i.e setting up environment variables, running a command, creating tables in their database, signing up for a service your code integrates with, etc), you can add a specific `setup.md` to the root of your project, who's markdown contents will be displayed to the user after the repo is cloned. Alternatively, if no `setup.md` is found, it will by default display the `README.md` file at the root of your template.
 
 # How to submit
 
@@ -116,4 +121,4 @@ Once you've verified and tested your template out at [the custom test page](http
 
 # Restrictions
 
-Any language or platform can be added here - it's not just limited to sites. No NSFW or anything crazy is allowed of course - basically be cool. Anyone found to be abusing the system will be barred from further submissions. 
+Any language or platform can be added here - it's not just limited to sites. No NSFW or anything crazy is allowed of course - basically be cool. Anyone found to be abusing the system will be barred from further submissions.
